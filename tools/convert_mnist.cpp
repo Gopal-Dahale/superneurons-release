@@ -77,15 +77,15 @@ void convert_mnist(const char *src_dir, const char *dst_dir) {
     char src_label[200];
     char dst_image[200];
     char dst_label[200];
-    sprintf(src_image, "%s/train-images-idx3-ubyte", src_dir);
-    sprintf(src_label, "%s/train-labels-idx1-ubyte", src_dir);
+    sprintf(src_image, "%s/train-images.idx3-ubyte", src_dir);
+    sprintf(src_label, "%s/train-labels.idx1-ubyte", src_dir);
     sprintf(dst_image, "%s/mnist_train_image.bin", dst_dir);
     sprintf(dst_label, "%s/mnist_train_label.bin", dst_dir);
 
     convert_file(src_image, src_label, dst_image, dst_label);
 
-    sprintf(src_image, "%s/t10k-images-idx3-ubyte", src_dir);
-    sprintf(src_label, "%s/t10k-labels-idx1-ubyte", src_dir);
+    sprintf(src_image, "%s/t10k-images.idx3-ubyte", src_dir);
+    sprintf(src_label, "%s/t10k-labels.idx1-ubyte", src_dir);
     sprintf(dst_image, "%s/mnist_test_image.bin", dst_dir);
     sprintf(dst_label, "%s/mnist_test_label.bin", dst_dir);
     convert_file(src_image, src_label, dst_image, dst_label);
