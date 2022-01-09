@@ -13,10 +13,10 @@ int main(int argc, char **argv) {
 //    char *checkpoint;
 
 //    train_mean_file = (char *) "/home/ay27/dataset/bin_file/imgnet_train.mean";
-    train_image_bin = (char *) "/home/ay27/dataset/bin_file/train_data_0.bin";
-    train_label_bin = (char *) "/home/ay27/dataset/bin_file/train_label_0.bin";
-    test_image_bin  = (char *) "/home/ay27/dataset/bin_file/val_data_0.bin";
-    test_label_bin  = (char *) "/home/ay27/dataset/bin_file/val_label_0.bin";
+    train_image_bin = (char *) "../bin_data/mnist_train_image.bin";
+    train_label_bin = (char *) "../bin_data/mnist_train_label.bin";
+    test_image_bin  = (char *) "../bin_data/mnist_test_image.bin";
+    test_label_bin  = (char *) "../bin_data/mnist_test_label.bin";
 //    checkpoint_file = (char *) "/home/ay27/dataset/bin_file/alexnet_checkpoint";
 
 //    train_image_bin = (char *) "/home/wwu/DeepLearning/data/imgnet/imgnet_val_data_0.bin";
